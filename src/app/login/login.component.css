@@ -1,0 +1,19 @@
+.login {
+    position:absolute;
+    top: 45%;
+    left: 50%;
+    width:30em;
+    height:18em;
+    margin-top: -9em;
+    margin-left: -15em;
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;    
+}
+
+.inputs {
+   
+    justify-content: center;
+    margin-top: 4%;
+    margin-left: 20%;
+    margin-right: 20%;
+}

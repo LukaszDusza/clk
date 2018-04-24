@@ -1,0 +1,328 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+/* COLORURS OF MINUNIES */
+   /* .POCZATEK{ background-color: #7FFF00;      
+      position: absolute;
+      border-radius: 10px;
+       width: 10px;
+       height: 10px;
+       left: 535px;
+    top: 50px;
+    z-index: 2;
+    
+}  */
+   /* .ZAKONCZENIE{ background-color:  #228B22;  
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 535px;
+ top: 60px;
+ z-index: 2;
+} 
+   .ROZWIDLENIE{ background-color: #00BFFF; 
+    z-index: 2;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 535px;
+ top: 70px;
+}
+   .ZLACZENIE{ background-color:   darkblue; 
+    z-index: 2;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 535px;;
+ top: 80px;
+}
+   .ODCINEK{ background-color:  #FFD700; 
+    z-index: 2;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 535px;
+ top: 90px;
+}
+   .KROPKA{ background-color:  rgb(12, 44, 223); 
+    z-index: 2;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 535px;
+ top: 100px;
+}
+   .STYK_BOCZNY{ background-color: #FF8C00; 
+    z-index: 2;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 535px;
+ top: 110px;
+}
+   .OCZKO{ background-color:  #FF4500; 
+    z-index: 2;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 535px;
+ top: 120px;
+}
+   .HACZYK{ background-color: #B22222; 
+    z-index: 2;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 535px;
+ top: 130px;
+}
+   .LINIA_PRZECHODZACA{ background-color: #9400D3; 
+    z-index: 2;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 535px;
+ top: 140px;
+}
+   .MOSTEK{ background-color:  #FF1493; 
+    z-index: 2;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 535px;
+ top: 150px;
+}
+   .SKRZYZOWANIE{ background-color:  #FF69B4; 
+    z-index: 2;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 535px;
+ top: 160px;
+}
+   .PRZERWA{ background-color:  #FFB6C1; 
+    z-index: 2;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 535px;
+ top: 170px;
+}
+*/
+   
+
+   .block {     
+       position: absolute;
+   } 
+
+   .selector {
+    position: absolute;
+    left: 30px;
+    top: 15px;   
+}
+
+
+/*  SWITCH */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {display:none;}
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .img {
+    /* position: absolute; */
+    
+   
+    position: absolute; 
+    /* left: 0px;
+    top: 0px; */
+    /* margin-top: 0px; */
+    /* width: 500px;
+    height: 500px; */
+     background-repeat: no-repeat;
+     /* display: block; */
+       /* z-index: 0;     */
+       /* background-size: cover; */
+        /* background-position: left top;  */
+    
+      
+  }
+
+  select {
+   margin-left: 3px;
+  }
+
+  button {
+    margin-left: 3px;
+  }
+
+  /* #image {
+    z-index: 1;
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    user-select: none;
+  } */
+
+  .dropzone {    
+    overflow: hidden;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    width:800px;
+    z-index: 0;
+  border: black solid 1px;
+}
+
+.height-box {
+  height: 800px;
+}
+
+#get_file {
+  /* background: #f9f9f9;
+  border: 5px solid #88c;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 10px; */
+  cursor: pointer;
+}
+
+.stats {
+    position: absolute;
+    top: 50px;
+    left: 840px;
+    width:260px;
+  /* height:800px; */
+  background-color: white;
+  border: black solid 1px;
+
+}
+
+.resetbtn {
+  margin-left: 375px;
+}
+
+.alert {    
+  position: absolute;
+  padding: 20px;
+  top: 70px;
+  left: 160px;
+  background-color: #f44336;
+  color: white;
+  z-index: 10;
+
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+.title {
+  text-align: center;
+  /* margin-top: 10px; */
+  background-color: rgb(215, 215, 215);
+  display: block;
+  color: rgb(0, 0, 0);
+}
+
+  .whiteboard {
+    /* position: absolute; */
+    /* left: 30px;
+    top: 50px; */
+       /* width: 800px;
+       height: 800px; */
+       /* border: black solid 1px; */
+       /* z-index: 0; */
+       /* overflow: hidden; */
+       /* display: inline-block;    */
+   }
+
+
+   /* #example{
+    position:relative;
+    width:500px;
+    height: 500px;
+    background-color:white;
+    z-index:10;
+}
+.square{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  z-index: 20000;
+  background-color: blue;
+} */
+#s1{
+  left: 150px;
+  top: 200px;
+}
+#s2{
+  left: 350px;
+  top: 200px;
+}
+
+
+
+  

@@ -1,0 +1,124 @@
+
+<div class="container-fluid">
+    <div class="buttons">
+        <div class=" button">
+            <button type="checkbox" (click)="selectMinutia(val1)" value="POCZATEK" class="radio btn btn-outline-default font" #val1>
+              <div class="mini-box" style="background-color: chartreuse;">
+              </div>POCZĄTEK: <br><img class="icon" src="./assets/images/minucje/poczatek.png"/></button>
+        </div>
+        <div class=" button ">
+            <button type="checkbox" (click)="selectMinutia(val2)" value="ZAKONCZENIE" class="radio btn btn-outline-default font" #val2>
+              <div class="mini-box" style="background-color: darkgreen;">
+              </div>ZAKOŃCZENIE: <br><img class="icon" src="./assets/images/minucje/zakonczenie.png"/></button>
+        </div>
+        <div class=" button">
+            <button type="checkbox" (click)="selectMinutia(val3)" value="ROZWIDLENIE" class="radio btn btn-outline-default font" #val3>
+              <div class="mini-box" style="background-color: deepskyblue;">
+              </div>ROZWIDLENIE: <br><img class="icon" src="./assets/images/minucje/rozwidlenie.png"/></button>
+        </div>
+        <div class=" button">
+            <button type="checkbox" (click)="selectMinutia(val4)" value="ZLACZENIE" class="radio btn btn-outline-default font" #val4 >
+              <div class="mini-box" style="background-color: royalblue;">
+              </div>ZŁĄCZENIE:<br> <img class="icon" src="./assets/images/minucje/zlaczenie.png"/></button>
+        </div>
+        <div class=" button">
+            <button type="checkbox" (click)="selectMinutia(val5)" value="ODCINEK" class="radio btn btn-outline-default font" #val5 >
+              <div class="mini-box" style="background-color: yellow;">
+              </div>ODCINEK: <br><img class="icon" src="./assets/images/minucje/odcinek.png"/></button>
+        </div>
+        <div class=" button">
+            <button type="checkbox" (click)="selectMinutia(val6)" value="KROPKA" class="radio btn btn-outline-default font" #val6 >
+              <div class="mini-box" style="background-color: salmon;">
+              </div>KROPKA:<br> <img class="icon" src="./assets/images/minucje/kropka.png"/></button>
+        </div>
+        <div class=" button">
+            <button type="checkbox" (click)="selectMinutia(val7)" value="STYK_BOCZNY" class="radio btn btn-outline-default font" #val7 >
+              <div class="mini-box" style="background-color: orange;">
+              </div>STYK BOCZNY: <br><img class="icon" src="./assets/images/minucje/styk_boczny.png"/></button>
+        </div>
+        <div class=" button">
+            <button type="checkbox" (click)="selectMinutia(val8)" value="OCZKO" class="radio btn btn-outline-default font" #val8 >
+              <div class="mini-box" style="background-color: red;">
+              </div>OCZKO: <br><img class="icon" src="./assets/images/minucje/oczko.png"/></button>
+        </div>
+        <div class=" button">
+            <button type="checkbox" (click)="selectMinutia(val9)" value="HACZYK" class="radio btn btn-outline-default font" #val9 >
+              <div class="mini-box" style="background-color: brown;">
+              </div>HACZYK: <br><img class="icon" src="./assets/images/minucje/haczyk.png"/></button>
+        </div>
+        <div class=" button">
+            <button type="checkbox" (click)="selectMinutia(val10)" value="LINIA_PRZECHODZACA" class="radio btn btn-outline-default font" #val10 >
+              <div class="mini-box" style="background-color: purple;">
+              </div>LINIA PRZECHODZĄCA: <br><img class="icon" src="./assets/images/minucje/linia_przechodzaca.png"/></button>
+        </div>
+        <div class=" button">
+            <button type="checkbox" (click)="selectMinutia(val11)" value="MOSTEK" class="radio btn btn-outline-default font" #val11 >
+              <div class="mini-box" style="background-color: fuchsia;">
+              </div>MOSTEK:<br> <img class="icon" src="./assets/images/minucje/mostek.png"/></button>
+        </div>
+        <div class=" button">
+            <button type="checkbox" (click)="selectMinutia(val12)" value="SKRZYZOWANIE" class="radio btn btn-outline-default font" #val12 >
+              <div class="mini-box" style="background-color: pink;">
+              </div>SKRZYŻOWANIE: <br><img class="icon" src="./assets/images/minucje/skrzyzowanie.png"/></button>
+        </div>
+        <div class=" button">
+            <button type="checkbox" (click)="selectMinutia(val13)" value="PRZERWA" class="radio btn btn-outline-default font" #val13 >
+              <div class="mini-box" style="background-color: violet;">
+              </div>PRZERWA:<br><img class="icon" src="./assets/images/minucje/przerwa.png"/></button>
+        </div>
+        <div class=" button cancel">
+            <button class="radio btn btn-outline-default font" type="submit" (click)="deleteLastAdded()">COFNIJ<br></button>
+            <button class="radio btn btn-outline-default font" type="submit" disabled>RESETUJ<br></button>
+        </div>
+    </div>
+        <!-- <div class="info">informacje o wybranej minucji: </div> -->
+    <div class="dropzone" id="dropzone">        
+        <div class="viewport" id="viewport">
+            <img class="img" id="img" [src]="imgUrl">
+        </div>
+    </div>
+    <div class="panel">
+      <div>
+          <p>Zbliżenie:</p>
+          <input type="range" min="1" max="4" value="1" (change)="zoom($event)">
+      </div>
+      <div class="inputs">
+          <p>Siatka:<input class="input" type="number" min="1" (change)="drawLines($event)"></p>
+          <input class="info" type="text" readonly>
+               
+        </div>
+        <div class="button save-load">
+            <button type="submit" class=" btn btn-outline-default font">ZAPISZ</button>
+            <button type="submit" class=" btn btn-outline-default font" (click)="fileInput.click()">WCZYTAJ</button>
+            <input style="display: none" type="file" (change)="loadFile($event.target.files)" #fileInput id="inputFile">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+  ZAKOŃCZENIE: <input type="checkbox" id="myCheck"><br>
+  ROZWIDLENIE: <input type="checkbox" id="myCheck"><br>
+  ZŁĄCZENIE: <input type="checkbox" id="myCheck"><br>
+  ODCINEK: <input type="checkbox" id="myCheck"><br>
+  KROPKA: <input type="checkbox" id="myCheck"><br>
+  STYK BOCZNY: <input type="checkbox" id="myCheck"><br>
+  OCZKO: <input type="checkbox" id="myCheck"><br>
+  HACZYK: <input type="checkbox" id="myCheck"><br>
+  LINIA PRZECHODZĄCA: <input type="checkbox" id="myCheck"><br>
+  MOSTEK: <input type="checkbox" id="myCheck"><br>
+  SKRZYŻOWANIE: <input type="checkbox" id="myCheck"><br>
+  PRZERWA: <input type="checkbox" id="myCheck"><br> -->
+
+

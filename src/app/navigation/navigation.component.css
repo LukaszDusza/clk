@@ -1,0 +1,186 @@
+/* html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+} */
+
+
+.box {  
+    width:30em;
+    height:18em;
+    margin-top: -9em;
+    margin-left: -15em;
+    border: 1px solid #ccc;
+    background-color: #f3f3f3; 
+    margin-top: 1%;
+    width: 80%;      
+}
+
+.row {
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+#navbar {
+    background:whitesmoke;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+  }
+
+header {
+    background-color: #e0e0e0; 
+    width: 100%;
+    /* min-height: 50px;   */
+    float: left;   
+    border-bottom: 1px solid rgb(180, 180, 180); 
+}
+
+.logo {
+    float: left;
+    margin: 0px;  
+    padding: 5px 50px 5px 0px;
+    /* max-width: 50px;
+    max-height: 50px; */
+}
+
+.title {
+    float: left;
+    margin: 3px;
+    padding: 5px 0px 5px 0;
+    color: rgb(41, 41, 41);
+    font-style: italic;
+    font-weight: lighter;
+    display: block;
+}
+
+/* 1200px */
+.container {
+    max-width: 100%;
+    margin: 0px;
+    /* padding: 0 3px;     */
+}
+.nav {
+/* background-color: lightgray; */
+list-style: none;
+text-align: center;
+ padding: 5px 0 1px 0;
+float: left;
+margin: 7px;
+font-size: 15px;
+
+}
+
+.login {
+    /* background-color: lightgray; */
+    color: black;
+    list-style: none;
+    text-align: center;
+    padding: 5px 0 10px 0;
+    float: left;
+    margin: 5px;
+    float: right; 
+    font-size: 15px;  
+    }
+
+    .login > li {
+        display: inline-block;
+        padding: 0 10px 0 10px;   
+    }
+    
+    .login > li > a {
+        text-decoration: none;
+        color: rgb(41, 41, 41);
+        display: block;
+        
+    }
+    
+    .login > li > a:hover {
+        color: lightslategray;
+    }
+
+
+.nav > li {
+    display: inline-block;
+    padding: 0 10px 0 10px;   
+}
+
+.nav > li > a {
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+    display: block;
+    
+}
+
+.nav > li > a:hover {
+    color: lightslategray;   
+}
+
+li {
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none;
+    
+}
+
+.overlay {
+    display: none;
+}
+/* 768 */
+@media all and (max-width: 768px) { 
+    .hamburger {
+        display: block;
+        max-width: 60px;
+        max-height: 60px;
+        float: right;
+        padding: 10px;
+    }
+
+.logo {
+    display: none;
+}
+
+.nav {
+    display: none;
+}
+
+.overlay {
+    display: block;
+}
+
+.overlay > li {
+    display: block;
+    padding: 10px 10px 0 10px;   
+}
+
+.overlay > li > a {
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+    display: block;
+    text-align: left;
+    font-size: 15px;   
+}
+
+.overlay > li > a:hover {
+    color: lightslategray;
+}
+
+.login {
+    display: none;
+}
+
+.title{
+    display: none;
+}
+
+}

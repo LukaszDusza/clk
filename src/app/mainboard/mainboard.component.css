@@ -1,0 +1,125 @@
+.buttons {
+    position: initial;
+    justify-content: center;
+    /* background-color: cornflowerblue; */        
+     float: left;
+     min-width: 200px;
+     max-width: 200px;
+     margin-right: 3px; 
+       
+}
+
+.button {  
+    justify-content: center;
+    /* border: 1px solid black; */
+    width: 90%;   
+    margin: 1px;
+    padding: 1px;
+    float: left; 
+}
+
+.icon {
+    width: 50%;
+    height:100%;
+}
+
+ #image {
+    z-index: 1;
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    user-select: none;
+  }
+
+.font {
+    font-size: 13px; 
+}
+
+.dropzone {
+    top: 15px;
+    left: 220px;
+    position: absolute;
+    width: 750px;
+   height: 750px;
+   min-width: 750px;
+   min-height: 750px;
+   overflow: hidden;
+   max-width: 750px;
+   max-height: 750px;
+z-index: 0;
+    border: 1px solid darkgray;
+    float: left;  
+}
+
+.viewport {
+   position: initial;
+    width: 100%;
+    border: 1px solid darkgray;
+    float: left; 
+}
+
+.container-fluid {
+    position: relative;   
+    width: 100%;
+}
+
+.cancel {   
+    justify-content: center;
+   width:100%;
+   margin:0px;   
+}
+
+.info {
+    margin-top: 30px;
+    position: initial;
+    width: 90%;
+    height: 300px;
+    justify-content: center;   
+    float: left;
+    padding: 2px;
+    margin-left: 7px;
+}
+
+.panel {
+    position: absolute;
+    margin-left: 10px;  
+   height: 750px;
+    border: 1px solid darkgray;
+    float: left;
+    min-width: 200px;
+     max-width: 200px;
+     justify-content: center;
+     text-align: center;
+     padding: 5px;
+     top: 15px;
+    left: 980px;
+    
+}
+
+.img {
+    position: initial;
+    max-width:100%;
+    max-height:100%;
+}
+
+.inputs {
+    justify-content: center;
+}
+
+.input {
+    width: 40%;
+    margin: 2px;   
+}
+
+.mini-box {
+    margin-left: 0px;
+    position: absolute;    
+    width: 10px;
+    height: 40px;
+}
+
+.save-load {
+    bottom: 0;
+    margin-top: 240px;
+    margin-left: 7px;
+}

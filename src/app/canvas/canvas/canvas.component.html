@@ -1,0 +1,92 @@
+<!-- <div class="whiteboard" id="whiteboard"></div> -->
+
+  <!-- <div class="whiteboard" id="whiteboard" style="background-image: url(https://img.redro.pl/fototapety/odcisk-palca-na-bialym-400-34125.jpg)"></div> -->
+  <div class="container-fluid"> 
+      <div class="row">
+          <div class="col-sm-6"> 
+              <div class="form-group" id="blocks"></div>    
+          </div>                
+    
+     <div class="selector">
+    <form class="form-inline" [formGroup]="form" (change)="forms()">                   
+      <!-- <div class="form-group">
+        <button id="createStartButton" (click)="createStartElement()">initial set</button>
+      </div>-->
+      <div class="form-group">
+        <button class="btn btn-default btn-sm" id="save"(click)="fileInput.click()">load image</button>
+      </div>
+                <select class="form-control-sm" id="select" formControlName="select">              
+                  <option *ngFor="let option of minutiaType.name" [value]="option">{{option | lowercase}}</option>   
+                </select>                        
+              <!-- <div class="form-group">
+                  <button id="createButton" (click)="createElement()">new minutia</button>
+                </div> -->
+                <div class="form-group">
+                    <!-- <input type="button" id="get_file" value="load file"> -->
+                    <!-- <input [value]= "filePath" (input)="saveFile($event)"> -->
+                    <input style="display: none" id="browse" type="file" (change)="previewFiles($event)" #fileInput id="inputFile">
+                    <!-- <input id="browse" type="file" (change)="createNewImage($event)" multiple> -->
+                    <!-- <input type="file" id="avatar" (change)="createNewImage($event)" #fileInput> -->
+                  </div>
+                  <!-- <div class="form-group">
+                    <button id="addFile" (click)="loadFileToBoard($event)">load file</button>
+                  </div> -->
+                  
+                  <!-- <div class="form-group">
+                    <button id="createButton" (click)="drawBoard()">create board</button>
+                  </div> -->
+                  
+                  <select class="form-control-sm" id="zoom" formControlName="zoom">              
+                    <option *ngFor="let zoom of zoom.name" [value]="zoom" disabled>{{zoom | lowercase}}</option>                               
+                  </select>
+                  <select class="form-control-sm" id="activity" formControlName="activity">              
+                    <option *ngFor="let activity of activity.name" [value]="activity">{{activity | lowercase}}</option>                               
+                  </select>
+                  <select class="form-control-sm" id="sectors" formControlName="sectors">              
+                    <option *ngFor="let sectors of sectors.name" [value]="sectors" disabled>{{sectors | lowercase}}</option>                               
+                  </select>
+                  <select class="form-control-sm" id="size" formControlName="size">              
+                    <option *ngFor="let size of size.name" [value]="size">{{size | lowercase}}</option>                               
+                  </select>
+                  <div class="form-group">
+                    <button class="btn btn-default btn-sm" id="save"(click)=" onUpload()">save work</button>
+                  </div>
+                  <div class="form-group">
+                      <button class="btn btn-default btn-sm resetbtn" id="reset"(click)=" onReset()">reset work</button>
+                    </div> 
+                  
+          </form>
+        </div>
+                   
+</div>
+
+<div class="row">    
+<div class="dropzone height-box" id="dropzone" (scroll)="scrollValue($event)"> 
+
+<!-- <svg id="svg" style="width: 800px; height: 800px; z-index: 2;position: absolute;"><line x1="242" y1="242" x2="468" y2="468" style="position: absolute; stroke: black; stroke-width: 2; z-index: 2;"></line></svg> -->
+
+
+<div class="alert"  *ngIf="warning" id="alert">
+  <span class="closebtn" (click)="warningTrigger()">&times;</span> 
+  <strong>Danger!</strong> Please save all the changes before closing or clik reset button.
+</div>
+<img id="image"  src="" alt="click load to image preview...">
+
+<!-- <div class="block" draggable="true" (dragstart)="drag_start($event)" (dblclick)="deleteOnDoubleClick($event)" id="block1"></div> -->
+<!-- <div id="block1" draggable="true" (dblclick)="deleteOnDoubleClick($event)">AUTOMAT</div> -->   
+<!-- <div class="block" draggable="true" id="block"></div> -->
+<!-- <div class="block" draggable="true" (dragover) = "allowDrop($event)" (dragstart)="dragStart($event)" (dblclick)="onDoubleClick($event)" id="block"></div> -->   
+</div> 
+
+<div class="stats height-box" id="stats">
+<div class="title">
+Statistics
+</div>
+</div>
+</div>
+
+
+<!-- <div (dragover)="allowDrop($event)" (drop)="drop($event)" class="whiteboard"></div> -->
+
+</div>
+
